@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    .grid-container{
+      display: grid;
+      height: 748px;
+      width: 748px;
+      gap: 9px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      background-color: black;
+    }
+
+    .first-element{
+      background-color: #E72F24;
+    }
+    .second-element{
+      grid-column: 2/ span 3;
+      background-color: #F0F1EC;
+    }
+    .third-element{
+      grid-row: span 2;
+      background-color: #F0F1EC;
+    }
+    .forth-element{
+      grid-column: span 2;
+      grid-row: span 2;
+      background-color: #F0F1EC;
+    }
+    .fifth-element{
+      background-color: #004592;
+      border-bottom: solid black 10px;
+    }
+    .sixth-element{
+      grid-row: span 2;
+      background-color: #F0F1EC;
+    }
+    .seventh-element{
+      background-color: #F0F1EC;
+    }
+    .eigth-element{
+      background-color: #F9D01E;
+    }
+    .ninth-element{
+      background-color: #232629;
+    }
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+
+  <div class="grid-container">
+    <div class="first-element"></div>
+    <div class="second-element"></div>
+    <div class="third-element"></div>
+    <div class="forth-element"></div>
+    <div class="blue fifth-element"></div>
+    <div class="sixth-element"></div>
+    <div class="seventh-element"></div>
+    <div class="eigth-element"></div>
+    <div class="ninth-element"></div>
+  </div>
+</body>
+
+</html>
