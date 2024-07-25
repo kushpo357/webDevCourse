@@ -1,9 +1,8 @@
-let i = 0;
 let arr = [];
 function fizzBuzz()
 {
-    while(i < 100){
-        i++;
+    for(let i = 0; i < 100; i++)
+    {
         if(i%15 == 0)
         {
             arr.push("fizzBuzz");
