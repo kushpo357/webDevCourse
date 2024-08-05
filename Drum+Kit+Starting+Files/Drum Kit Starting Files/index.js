@@ -2,11 +2,17 @@
 var btn = document.querySelectorAll(".drum");
 for(var i = 0; i < btn.length; i++)
 {
-    btn[i].addEventListener("click", function () {audioPlay(this.innerText);});
+    btn[i].addEventListener("click", function () {
+        audioPlay(this.innerText);
+        buttonAnimation(this.innerText);
+    });
 }
 
 //detect keypress
-document.addEventListener("keydown", (e) => audioPlay(e.key));
+document.addEventListener("keydown", (e) => {
+    audioPlay(e.key);
+    buttonAnimation(e.key);
+});
 
 //make sound
 function audioPlay(key){
@@ -42,4 +48,11 @@ function audioPlay(key){
             audio.play();
             break;
     }
+}
+
+function buttonAnimation(key)
+{
+    let actionkey = document.querySelector("." + key);
+    actionkey.classList.add("pressed");
+    setTimeout(() => actionkey.classList.remove("pressed"), 100);
 }
